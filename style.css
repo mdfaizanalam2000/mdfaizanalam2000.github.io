@@ -371,7 +371,8 @@ form textarea {
 
 form .btn {
     width: 100px;
-    padding: 5px 10px
+    padding: 5px 10px;
+    border: none;
 }
 
 /* -------footer section---------- */
