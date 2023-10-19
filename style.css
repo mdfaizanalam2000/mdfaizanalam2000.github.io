@@ -223,7 +223,7 @@ nav ul li a:hover::after {
 }
 
 /* ----------portfolio section--------- */
-#portfolio {
+#portfolio,#certifications {
     margin-top: 5%;
 }
 
