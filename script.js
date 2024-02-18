@@ -24,21 +24,33 @@ function closemenu() {
     sidemenu.style.right = "-200px"
 }
 
-// --------------//
+// -------send email part-------//
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbxXg8VmOpocmmgtLvi45tJSPXllrm8gyr6_jHjIULPhIg6QtWMNXd1TtkPuvmsosqGr/exec'
-const form = document.forms['submit-to-google-sheet']
-const message = document.getElementById("message")
+const handleSendEmail = () => {
+    const from_name = document.getElementById("from_name")
+    const from_email = document.getElementById("from_email")
+    const message = document.getElementById("msg")
+    const messagebox = document.getElementById("message")
 
-form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-        .then(response => {
-            message.innerHTML = "Form was submitted successfully"
+    var templateParams = {
+        from_name: from_name.value,
+        from_email: from_email.value,
+        message: message.value
+    };
+
+    emailjs.send('service_relookj', 'template_1vndkif', templateParams)
+        .then(function () {
+            messagebox.innerHTML = "Message was sent successfully!"
+            from_name.value = ""
+            from_email.value = ""
+            message.value = ""
             setTimeout(function () {
-                message.innerHTML = ""
+                messagebox.innerHTML = ""
             }, 5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-})
+        }, function () {
+            messagebox.innerHTML = "Sorry, your message was not sent!"
+            setTimeout(function () {
+                messagebox.innerHTML = ""
+            }, 5000)
+        });
+}

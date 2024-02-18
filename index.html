@@ -36,7 +36,7 @@
         <div class="container">
             <div class="text">
                 <h1>Hi, I am MD Faizan Alam</h1>
-                <p>MERN Stack Developer</p>
+                <p>Full Stack Developer</p>
                 <p id="github"><a href="https://github.com/mdfaizanalam2000" target="_blank">Checkout my GitHub profile
                         <i class="fa-brands fa-github fa-beat"></i></a></p>
             </div>
@@ -304,13 +304,13 @@
                                 class="uil uil-instagram"></i></a>
                         <a href="https://wa.me/918877188983" target="_blank"><i class="uil uil-whatsapp"></i></a>
                     </div>
-                    <a href="./myresume.pdf" download class="btn">Download resume</a>
+                    <a href="./mdfaizanalam_resume.pdf" download class="btn">Download resume</a>
                 </div>
                 <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your name" required>
-                        <input type="email" name="Email" placeholder="Your email" required>
-                        <textarea name="Message" rows="4" placeholder="Your message"></textarea>
+                    <form onsubmit="handleSendEmail(); return false;">
+                        <input type="text" id="from_name" placeholder="Your name" required>
+                        <input type="email" id="from_email" placeholder="Your email" required>
+                        <textarea id="msg" rows="4" placeholder="Your message" required></textarea>
                         <button type="submit" class="btn">Send</button>
                     </form>
                     <span id="message"></span>
@@ -318,11 +318,18 @@
             </div>
         </div>
         <footer>
-            <p>Copyright <i class="uil uil-copyright"></i> 2023. Made with <i class="uil uil-heart"></i> by Faizan
+            <p>Copyright <i class="uil uil-copyright"></i> 2024. Made with ❤️ by Faizan
             </p>
         </footer>
     </div>
     <script src="script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("MGn12w4QxJ8LTzfxw");
+        })();
+    </script>
 </body>
 
 </html>
