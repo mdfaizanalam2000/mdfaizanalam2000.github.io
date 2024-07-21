@@ -223,7 +223,9 @@ nav ul li a:hover::after {
 }
 
 /* ----------portfolio section--------- */
-#portfolio,#certifications {
+#portfolio,
+#certifications,
+#top-projects {
     margin-top: 5%;
 }
 

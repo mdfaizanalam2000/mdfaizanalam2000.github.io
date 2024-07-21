@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website--All about me</title>
+    <title>Portfolio Website- All about me</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -25,7 +25,7 @@
             <li><a href="#" onclick="closemenu()">Home</a></li>
             <li><a href="#about" onclick="closemenu()">About</a></li>
             <li><a href="#contact" onclick="closemenu()">Contact</a></li>
-            <li><a href="#portfolio" onclick="closemenu()">Projects</a></li>
+            <li><a href="#top-projects" onclick="closemenu()">Projects</a></li>
             <li><a href="#services" onclick="closemenu()">Skills</a></li>
             <li><a href="#certifications" onclick="closemenu()">Certifications</a></li>
             <i class="uil uil-multiply" onclick="closemenu()"></i>
@@ -47,21 +47,20 @@
         <div class="container">
             <div class="row">
                 <div class="about-left">
-                    <img src="./images/IMG_3581.JPG" alt="error">
+                    <img src="./images/user.JPG" alt="error">
                 </div>
                 <div class="about-right">
                     <h1 class="subtitle">About Me</h1>
-                    <p id="intro">A highly motivated and hardworking individual looking for a
-                        responsible role in a reputable organization. Furthermore, I am adept at handling multiple
-                        tasks
-                        on a daily basis competently and at working well under pressure.</p>
+                    <p id="intro">A highly motivated and hardworking full stack developer, currently working as a
+                        software engineer in Bengaluru, India. I am equally good in both frontend and backend
+                        technologies. I have worked with multiple databases as well, throughout my IT career.</p>
                     <div class="tabs">
                         <p class="tab-links active-link" onclick="opentab('education')">Education</p>
                         <p class="tab-links" onclick="opentab('experience')">Achievements</p>
                     </div>
                     <div class="tab-content active-tab" id="education">
                         <ul>
-                            <li><span>Bachelors of Technology in Computer Science and Engineering</span><br>National
+                            <li><span>Bachelor of Technology in Computer Science and Engineering</span><br>National
                                 Institute Of Science & Technology, Berhampur, Odisha <br>(2020-2024)
                             </li>
                             <li><span>Intermediate</span><br>M.M.S.S.V.M, Madhupur, Jharkhand <br>(2019)</li>
@@ -161,9 +160,43 @@
         </div>
     </div>
 
+    <div id="top-projects">
+        <div class="container">
+            <h1 class="subtitle">My Top Projects</h1>
+            <div class="work-list">
+                <div class="work"><img src="https://loremflickr.com/300/300/news" alt="error">
+                    <div class="layer">
+                        <h3>LaZee News</h3>
+                        <p>This is an awesome news application built using react.js and free news API. Application also
+                            allows users to search for specific news using searchbar.</p>
+                        <a href="https://lazeenews.netlify.app/" target="_blank"><i class="uil uil-link"></i></a>
+                    </div>
+                </div>
+
+                <div class="work"><img src="https://loremflickr.com/300/300/movie" alt="error">
+                    <div class="layer">
+                        <h3>MovieX</h3>
+                        <p>This is a movie application which shows currently trending movies on homepage. Users can also
+                            search for any specific movie to see all the related details.</p>
+                        <a href="https://tmdbmoviex.netlify.app/" target="_blank"><i class="uil uil-link"></i></a>
+                    </div>
+                </div>
+
+                <div class="work"><img src="https://loremflickr.com/300/300/todo" alt="error">
+                    <div class="layer">
+                        <h3>Tasky</h3>
+                        <p>This is an amazing full stack application where users can signup to keep a track of their
+                            tasks. Combination of react.js, MySQL and FastAPI is used.</p>
+                        <a href="https://tasky-react.netlify.app/" target="_blank"><i class="uil uil-link"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div id="portfolio">
         <div class="container">
-            <h1 class="subtitle">My Projects</h1>
+            <h1 class="subtitle">Other Projects</h1>
             <div class="work-list">
                 <div class="work"><img src="https://loremflickr.com/300/300/blooddonation" alt="error">
                     <div class="layer">
@@ -174,11 +207,12 @@
                     </div>
                 </div>
 
-                <div class="work"><img src="https://loremflickr.com/300/300/taskmanager" alt="error">
+                <div class="work"><img src="https://loremflickr.com/300/300/sticker" alt="error">
                     <div class="layer">
-                        <h3>Task Manager</h3>
-                        <p>This is a basic tool for managing daily tasks. It has CRUD functionalities.</p>
-                        <a href="https://taskmanagertool.netlify.app/" target="_blank"><i class="uil uil-link"></i></a>
+                        <h3>GIF App</h3>
+                        <p>This is a gif search application which uses Firebase to signup and signin. Users can search
+                            for trending gifs.</p>
+                        <a href="https://giphy2023.vercel.app" target="_blank"><i class="uil uil-link"></i></a>
                     </div>
                 </div>
 
@@ -194,7 +228,8 @@
                     <div class="layer">
                         <h3>Weather App</h3>
                         <p>Weather app built using node.js and express.js.</p>
-                        <a href="https://express-weather.cyclic.app" target="_blank"><i class="uil uil-link"></i></a>
+                        <a href="https://express-weather-ws67.onrender.com" target="_blank"><i
+                                class="uil uil-link"></i></a>
                     </div>
                 </div>
 
@@ -207,16 +242,16 @@
                     </div>
                 </div>
 
-                <div class="work"><img src="https://loremflickr.com/300/300/application" alt="error">
+                <div class="work"><img src="https://loremflickr.com/300/300/instagram" alt="error">
                     <div class="layer">
-                        <h3>To-do App</h3>
-                        <p>This is an awesome classic to-dos app built using react.</p>
-                        <a href="https://mdfaizanalam2000.github.io/todos-app/" target="_blank"><i
-                                class="uil uil-link"></i></a>
+                        <h3>XInsta</h3>
+                        <p>This is an awesome tool to track unfollowers and unaccepted follow requests sent on
+                            instagram.</p>
+                        <a href="https://xinsta.netlify.app" target="_blank"><i class="uil uil-link"></i></a>
                     </div>
                 </div>
 
-                <div class="work"><img src="https://loremflickr.com/300/300/mobile" alt="error">
+                <div class="work"><img src="https://loremflickr.com/300/300/application" alt="error">
                     <div class="layer">
                         <h3>PlayWithText</h3>
                         <p>Text utility web application built using create-react-app.</p>
@@ -225,16 +260,15 @@
                     </div>
                 </div>
 
-                <div class="work"><img src="https://loremflickr.com/300/300/coding" alt="error">
+                <div class="work"><img src="https://loremflickr.com/300/300/shopping" alt="error">
                     <div class="layer">
-                        <h3>codeBlooded</h3>
-                        <p>A blog website built using only Bootstrap.</p>
-                        <a href="https://mdfaizanalam2000.github.io/codeBlooded" target="_blank"><i
-                                class="uil uil-link"></i></a>
+                        <h3>Shopsy</h3>
+                        <p>A shopping application with eye-pleasing UI. It has all the necessary features included.</p>
+                        <a href="https://shopsy-react.netlify.app" target="_blank"><i class="uil uil-link"></i></a>
                     </div>
                 </div>
 
-                <div class="work"><img src="https://loremflickr.com/300/300/worldclock" alt="error">
+                <div class="work"><img src="https://loremflickr.com/300/300/clock" alt="error">
                     <div class="layer">
                         <h3>Zonal Times</h3>
                         <p>Simple world clock which is capable of showing current time in difference time-zones.</p>
